@@ -3,173 +3,167 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Altranex.dev | Automate, Innovate, Dominate</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap">
+  <title>Altranex.dev | Automate. Trade. Scale.</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
   <style>
+    :root {
+      --brand-primary: #08fdd8;
+      --brand-accent: #1e90ff;
+      --bg-dark: #0f0f1a;
+      --text-light: #f0f0f0;
+      --text-muted: #999;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: 'Rubik', sans-serif;
-      background-color: #0f0f1a;
-      color: #f0f0f0;
-      line-height: 1.75;
-      font-size: 1rem;
+      font-family: 'Orbitron', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.7;
     }
     header {
+      background: linear-gradient(90deg, var(--brand-primary), var(--brand-accent));
       padding: 2rem;
-      background: linear-gradient(90deg, #08fdd8, #1e90ff);
       text-align: center;
     }
     header h1 {
-      margin: 0;
+      color: var(--bg-dark);
       font-size: 2.5rem;
-      color: #0f0f1a;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #10101a;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: var(--brand-primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: var(--brand-accent);
     }
     section {
-      padding: 2rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
+      padding: 3rem 2rem;
     }
     h2 {
-      color: #08fdd8;
-      margin-top: 2rem;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
+      color: var(--brand-primary);
+      margin-bottom: 1rem;
     }
-    ul, p {
-      font-size: 1.1rem;
+    ul {
+      padding-left: 1.2rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
     }
     .grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-      font-size: 1.05rem;
-    }
-    table th, table td {
-      border: 1px solid #444;
-      padding: 0.75rem;
-    }
-    table th {
-      background-color: #1e1e2e;
+    .card {
+      background: #1c1c2b;
+      border: 1px solid #333;
+      padding: 1.5rem;
+      border-radius: 8px;
     }
     footer {
-      background: #1a1a2f;
-      padding: 1rem;
       text-align: center;
-      color: #888;
+      padding: 2rem;
+      background: #1a1a2f;
+      color: var(--text-muted);
     }
-    a { color: #08fdd8; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a.btn {
+      background: var(--brand-primary);
+      color: var(--bg-dark);
+      padding: 0.75rem 1.5rem;
+      display: inline-block;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+    a.btn:hover {
+      background: var(--brand-accent);
+      color: white;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Altranex.dev | Automate. Innovate. Dominate.</h1>
+    <h1>Altranex.dev</h1>
+    <p>Automate. Trade. Scale.</p>
   </header>
-  <section>
-    <h2>🧾 Investor Proposal</h2>
-    <p><strong>Altranex.dev</strong> is a futuristic tech brand delivering intelligent solutions in <strong>AI</strong>, <strong>automation</strong>, <strong>trading systems</strong>, <strong>P2P infrastructure</strong>, and <strong>digital investments</strong>.</p>
-    <p>We build smart systems that automate results, generate revenue, and scale businesses. From proprietary bots to white-label trading & P2P infrastructure, we're creating a high-yield digital ecosystem.</p>
-    <p>We're raising <strong>$10,000</strong> to structure, scale, and grow our revenue-generating systems into a 6–7 figure digital empire.</p>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="mailto:info@altranex.dev">Email Us</a>
+  </nav>
 
-    <h2>🔹 Services We Offer</h2>
-    <h3>⚙️ Tech & Software</h3>
-    <ul>
-      <li>AI Bots & Automation Systems</li>
-      <li>Web, App & Software Development</li>
-      <li>Business Workflow Automation</li>
-      <li>VPS & Cloud Infrastructure</li>
-    </ul>
-    <h3>📈 Trading Investment</h3>
-    <ul>
-      <li>Custom Trading Bots (MT4/MT5, Grid, Martingale, Hedging, etc.)</li>
-      <li>ROI-based Investment Portfolios</li>
-      <li>Prop-Firm Compliant Trading Strategies</li>
-      <li>High-Frequency and Copy Trading Models</li>
-    </ul>
-    <h3>🔗 P2P & Financial Infrastructure</h3>
-    <ul>
-      <li>P2P Crypto Services (Escrow, Exchange, Wallets)</li>
-      <li>Custom P2P Dashboard / Automation Tools</li>
-      <li>On-ramp/off-ramp Integration for Fiat-Crypto Movement</li>
-    </ul>
+  <!-- Services Section -->
+  <section class="py-16 px-6 bg-[#111827]">
+    <h2 class="text-3xl font-bold text-center mb-10 text-cyan-400">What We Do</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        
+        <div class="bg-[#1f2937] p-6 rounded-2xl shadow-md hover:shadow-cyan-500/50 transition">
+        <div class="text-4xl mb-3">🤖</div>
+        <h3 class="text-xl font-semibold text-cyan-300 mb-2">AI & Bots</h3>
+        <p class="text-gray-400">Smart bots, custom AI logic, automation pipelines</p>
+        </div>
 
-    <h2>🔹 Funding Allocation</h2>
-    <table>
-      <tr><th>Category</th><th>Budget</th></tr>
-      <tr><td>Marketing & Ads</td><td>$1,000</td></tr>
-      <tr><td>High-End PCs (2–3 Units)</td><td>$2,000</td></tr>
-      <tr><td>Recording Tools</td><td>$500</td></tr>
-      <tr><td>Branding Assets</td><td>$500</td></tr>
-      <tr><td>Staffing (6 Months)</td><td>$1,000</td></tr>
-      <tr><td>VPS & Cloud Hosting</td><td>$800</td></tr>
-      <tr><td>Software Licenses</td><td>$700</td></tr>
-      <tr><td>P2P Platform Setup</td><td>$500</td></tr>
-      <tr><td>Strategy R&D & Testing</td><td>$500</td></tr>
-      <tr><td>Client Onboarding Systems</td><td>$300</td></tr>
-      <tr><td>Contingency & Reserve</td><td>$700</td></tr>
-    </table>
+        <div class="bg-[#1f2937] p-6 rounded-2xl shadow-md hover:shadow-cyan-500/50 transition">
+        <div class="text-4xl mb-3">📉</div>
+        <h3 class="text-xl font-semibold text-cyan-300 mb-2">Trading Systems</h3>
+        <p class="text-gray-400">Grid, hedge, martingale, and copy trading bots</p>
+        </div>
 
-    <h2>🔹 Projections & Targets</h2>
-    <h3>📅 Year 1 (Launch & Foundation Phase)</h3>
-    <ul>
-      <li>Complete brand assets, web platform, bot library</li>
-      <li>Onboard 20–30 active paying clients (bots, P2P, VPS)</li>
-      <li>Build YouTube & Telegram audience to 5k+</li>
-      <li>Generate $12,000–$18,000 in revenue</li>
-      <li>Secure 5 investment accounts with weekly ROI plans</li>
-      <li>Launch P2P crypto escrow and exchange prototype</li>
-    </ul>
-    <h3>📅 Year 2 (Growth Phase)</h3>
-    <ul>
-      <li>Build Altranex SaaS dashboard for client automation</li>
-      <li>Scale to 100+ paying users across services</li>
-      <li>Launch paid bot-as-a-service subscriptions</li>
-      <li>Grow monthly recurring revenue (MRR) to $2,000+</li>
-      <li>Reach $35,000–$50,000 in total revenue</li>
-      <li>Partner with trading firms & local P2P vendors</li>
-      <li>Onboard 25+ ROI clients with capital above $100,000 managed</li>
-    </ul>
-    <h3>📅 Year 3 (Domination Phase)</h3>
-    <ul>
-      <li>Expand into 3 international markets (Africa, Europe, Asia)</li>
-      <li>Launch investment dashboard & automation app</li>
-      <li>Develop AI-backed prop firm trading assistant</li>
-      <li>Cross $100,000 in total cumulative revenue</li>
-      <li>Hire full-time technical & creative team</li>
-      <li>Begin fundraising for Series A or acquisition model</li>
-    </ul>
+        <div class="bg-[#1f2937] p-6 rounded-2xl shadow-md hover:shadow-cyan-500/50 transition">
+        <div class="text-4xl mb-3">💻</div>
+        <h3 class="text-xl font-semibold text-cyan-300 mb-2">Web & App Dev</h3>
+        <p class="text-gray-400">Full-stack websites, apps, and automation dashboards</p>
+        </div>
 
-    <h2>🔹 Return on Investment (ROI)</h2>
-    <ul>
-      <li>5%–15% Equity stake in Altranex.dev</li>
-      <li>Priority revenue share on bots & P2P profits</li>
-      <li>Investor dashboard access for ROI tracking</li>
-      <li>Buy-back guarantee or scaling equity options within 12–24 months</li>
-    </ul>
+        <div class="bg-[#1f2937] p-6 rounded-2xl shadow-md hover:shadow-cyan-500/50 transition">
+        <div class="text-4xl mb-3">💱</div>
+        <h3 class="text-xl font-semibold text-cyan-300 mb-2">P2P & Fintech</h3>
+        <p class="text-gray-400">Escrow, crypto exchange, fiat/crypto gateway tools</p>
+        </div>
 
-    <h2>🔹 Investor Pitch</h2>
-    <p>With Altranex.dev, you’re investing in:</p>
-    <ul>
-      <li>🌍 Global digital automation demand</li>
-      <li>📊 Highly scalable trading & P2P tech</li>
-      <li>⚙️ Profitable SaaS and dev models</li>
-      <li>🧠 Founder-led innovation with lean execution</li>
-    </ul>
-    <p>Be part of the engine that powers the future of automation, AI, and smart finance.</p>
+        <div class="bg-[#1f2937] p-6 rounded-2xl shadow-md hover:shadow-cyan-500/50 transition">
+        <div class="text-4xl mb-3">☁️</div>
+        <h3 class="text-xl font-semibold text-cyan-300 mb-2">Cloud & VPS</h3>
+        <p class="text-gray-400">Secure VPS, high-speed deployment & CI/CD</p>
+        </div>
+        
+    </div>
+    </section>
 
-    <h2>📩 Contact</h2>
-    <p><strong>Okoh Samuel</strong><br>
-    Founder, Altranex.dev<br>
-    <a href="https://wa.me/2349020329575">info@altranex.dev</a><br>
-    <a href="https://altranex.dev" target="_blank">www.altranex.dev "under construction"</a><br>
-    <a href="https://wa.me/2349020329575">WhatsApp: +2349020329575</a></p>
+    <!-- Why Us Section -->
+    <section class="py-16 px-6 bg-black border-t border-cyan-800">
+    <h2 class="text-3xl font-bold text-center mb-10 text-cyan-400">Why Altranex.dev</h2>
+    <ul class="max-w-4xl mx-auto space-y-4 text-lg text-gray-300 list-disc list-inside">
+        <li>⚡ Tools built for speed, scale, and efficiency</li>
+        <li>🔐 Secure, stable, and optimized systems</li>
+        <li>👨‍💻 Built by devs who automate everything</li>
+        <li>🧠 AI-first logic, smart automation architecture</li>
+    </ul>
   </section>
+
+
+  <section id="contact">
+    <h2>📩 Get in Touch</h2>
+    <p><strong>Email:</strong> <a href="mailto:info@altranex.dev">info@altranex.dev</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/altranex.dev" target="_blank">@altranex.dev</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/2349020329575" target="_blank">+234 902 032 9575</a></p>
+    <a href="mailto:info@altranex.dev" class="btn">Send Us a Proposal</a>
+  </section>
+
   <footer>
-    &copy; 2025 Altranex.dev. Built for the future.
+    &copy; 2025 Altranex.dev | Crafted for intelligent automation & trading.
   </footer>
 </body>
 </html>
