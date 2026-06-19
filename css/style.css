@@ -2152,6 +2152,15 @@ content
     background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0.7) 100%);
 }
 
+.art-banner .art-banner-overlay video {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    display: block;
+    transform: translateZ(0);
+    will-change: transform, opacity;
+}
+
 /* line 62, ../scss/_content.scss */
 
 .art-banner .art-banner-overlay.art-side-overlay {
